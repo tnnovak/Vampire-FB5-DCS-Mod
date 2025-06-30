@@ -37,9 +37,9 @@ If necessary: <br>
 * cockpit lights ON
 
 On taxi: <br>
-* LCtrl + S --> brakes left
-* LCtrl + D --> brakes right
-* LAlt +  S --> apply both brakes
+* <b>LCtrl + S</b> --> brakes left
+* <b>LCtrl + D</b> --> brakes right
+* <b>LAlt +  S</b> --> apply both brakes
 
 Press F to deploy full flaps
 
@@ -53,8 +53,8 @@ Press F to retract flaps, press G to retract gears (3 greens lights, gears down,
 * Select Bombs or Rockets on B/R switch
 * Select mode on Salvo mode switch (for rockets only): single or all
 
-Turn gunsight ON on the gunsight ON/OFF sight
-Move sight: 
+Turn gunsight ON on the gunsight ON/OFF switch<br>
+Move sight:<br> 
 * up/down --> LCtrl + I, LCtrl + M
 * left / right --> LCtrl + I, LCtrl + M
 
@@ -68,6 +68,6 @@ Pitch TRIM (check trim indicator, left side of the Gunsight):
 
 ## Other controls
 
-LShift + S: Hide stick (usefull to check center fuel tank indicator behind the stick)
+<b>LShift + S<b>: Hide stick (usefull to check center fuel tank indicator behind the stick)
 
 
