@@ -11,6 +11,7 @@ This is a rather still experimental version. Error reporting, feedbacks and impr
 * Gunsight algorithm
 * Some instruments
 * Air brakes
+* Oxygen system
 * Many other small bugs
 
 ## Works:
