@@ -60,6 +60,8 @@ Press F to retract flaps, press G to retract gears (3 greens lights, gears down,
 * Select Bombs or Rockets on B/R switch
 * Select mode on Salvo mode switch (for rockets only): single or all
 
+  <b>LAlt + SPACE</b> to fire
+
 Turn gunsight ON on the gunsight ON/OFF switch<br>
 Move sight:<br> 
 * up/down --> LCtrl + I, LCtrl + M
