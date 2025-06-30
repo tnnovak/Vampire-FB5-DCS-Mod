@@ -49,21 +49,25 @@ Press F to retract flaps, press G to retract gears (3 greens lights, gears down,
 
 ## Weapons controls
 
-Switch Master weapons ON
-Select Bombs or Rockets on B/R switch
-Select mode on Salvo mode switch (for rockets only): single or all
+* Switch Master weapons ON
+* Select Bombs or Rockets on B/R switch
+* Select mode on Salvo mode switch (for rockets only): single or all
 
 Turn gunsight ON on the gunsight ON/OFF sight
 Move sight: 
-up/down --> LCtrl + I, LCtrl + M
-left / right --> LCtrl + I, LCtrl + M
+* up/down --> LCtrl + I, LCtrl + M
+* left / right --> LCtrl + I, LCtrl + M
 
 Adjust gunsight size in the gunsight dial on the device front
 
-Flight controls
+## Flight controls
 
-Pitch TRIM 
+Pitch TRIM (check trim indicator, left side of the Gunsight):  
+* , Trim UP
+* . Trim Down
 
-Other controls
+## Other controls
+
+LShift + S: Hide stick (usefull to check center fuel tank indicator behind the stick)
 
 
