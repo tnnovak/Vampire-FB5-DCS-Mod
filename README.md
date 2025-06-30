@@ -20,6 +20,8 @@ This is a rather still experimental version. Error reporting, feedbacks and impr
 
 ## Cold startup Sequence
 
+<img src="https://github.com/tnnovak/Vampire-FB5-DCS-Mod/blob/main/images/cockpit.png"></img>
+
 1. Click Battery ON switch
 2. High pressure fuel valve ON
 3. Low Pressure fuel valve ON
@@ -73,6 +75,8 @@ Comsumption: Top tanks first, wing tanks second, fuselage tank last
 Full internal tanks, sea level, full throttle endurance: around 60 minutes
 
 Indicators: 
+
+<img src="https://github.com/tnnovak/Vampire-FB5-DCS-Mod/blob/main/images/fuel-indicators.png">
 
 ## Other controls
 
