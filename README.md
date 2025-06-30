@@ -76,6 +76,8 @@ Full internal tanks, sea level, full throttle endurance: around 60 minutes
 
 Indicators: 
 
+<img src="https://github.com/tnnovak/Vampire-FB5-DCS-Mod/blob/main/images/fuel-indicators.png">
+
 ## Other controls
 
 <b>LShift + S</b>: Hide stick (usefull to check center fuel tank indicator behind the stick)
