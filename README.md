@@ -68,6 +68,6 @@ Pitch TRIM (check trim indicator, left side of the Gunsight):
 
 ## Other controls
 
-<b>LShift + S<b>: Hide stick (usefull to check center fuel tank indicator behind the stick)
+<b>LShift + S</b>: Hide stick (usefull to check center fuel tank indicator behind the stick)
 
 
