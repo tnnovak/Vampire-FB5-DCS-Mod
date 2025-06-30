@@ -28,7 +28,7 @@ This is a rather still experimental version. Error reporting, feedbacks and impr
 4. Throttle full back
 5. Click gyro switch ON
 6. Click booster pump ON
-7. Click Ground power switch ON
+7. Click Ground power selector ON
 8. Click engine start switch
 9. Wait EGT and RPM to stablize at 3000 rpm (idle)
 
