@@ -70,7 +70,7 @@ Pitch TRIM (check trim indicator, left side of the Gunsight):
 
 ## Fuel System
 
-Comsumption: Top tanks first, wing tanks second, fuselage tank last
+Comsumption: Tip tanks first, wing tanks second, fuselage tank last
 
 Full internal tanks, sea level, full throttle endurance: around 60 minutes
 
