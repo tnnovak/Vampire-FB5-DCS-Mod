@@ -11,6 +11,7 @@ This is a rather still experimental version. Error reporting, feedbacks and impr
 * Gunsight algorithm
 * Some instruments
 * Air brakes
+* Oxygen system
 * Many other small bugs
 
 ## Works:
@@ -20,6 +21,8 @@ This is a rather still experimental version. Error reporting, feedbacks and impr
 
 ## Cold startup Sequence
 
+Check right panel switches below:
+
 <img src="https://github.com/tnnovak/Vampire-FB5-DCS-Mod/blob/main/images/cockpit.png"></img>
 
 1. Click Battery ON switch
@@ -28,7 +31,7 @@ This is a rather still experimental version. Error reporting, feedbacks and impr
 4. Throttle full back
 5. Click gyro switch ON
 6. Click booster pump ON
-7. Click Ground power switch ON
+7. Click Ground power selector ON
 8. Click engine start switch
 9. Wait EGT and RPM to stablize at 3000 rpm (idle)
 
@@ -70,7 +73,7 @@ Pitch TRIM (check trim indicator, left side of the Gunsight):
 
 ## Fuel System
 
-Comsumption: Top tanks first, wing tanks second, fuselage tank last
+Comsumption: Tip tanks first, wing tanks second, fuselage tank last
 
 Full internal tanks, sea level, full throttle endurance: around 60 minutes
 
