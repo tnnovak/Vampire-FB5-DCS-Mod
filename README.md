@@ -3,22 +3,22 @@ Vampire FB5 DCS World MOD
 
 This is a rather still experimental version. Error reporting, feedbacks and improvement sugestions are wellcome.
 
-Features not aviable, still WIP:
+## Features not aviable, WIP:
 
-External fuel tanks
-Complete damage model
-EFM: Non-linear and spin behaviour, better compressibility effects
-Gunsight algorithm
-Some instruments
-Air brakes
-Many other small bugs
+* External fuel tanks
+* Complete damage model
+* EFM: Non-linear and spin behaviour, better compressibility effects
+* Gunsight algorithm
+* Some instruments
+* Air brakes
+* Many other small bugs
 
-Works:
-basic EFM with flight envelope more or less close to Vampire curves
-Weapons: bombs and rockets
-Basic aircraft systems: pneumatic, hydraulic, electric and engine
+## Works:
+* basic EFM with flight envelope more or less close to Vampire curves
+* Weapons: bombs and rockets
+* Basic aircraft systems: pneumatic, hydraulic, electric and engine
 
-Cold startup Sequence
+## Cold startup Sequence
 
 1. Click Battery ON switch
 2. High pressure fuel valve ON
@@ -32,14 +32,14 @@ Cold startup Sequence
 
 Dont move throttle too fast or engine will stall /  surge
 
-If necessary:
-external lights ON
-cockpit lights ON
+If necessary: <br>
+* external lights ON
+* cockpit lights ON
 
-On taxi:
-LCtrl + S --> brakes left
-LCtrl + D --> brakes right
-LAlt +  S --> apply both brakes
+On taxi: <br>
+* LCtrl + S --> brakes left
+* LCtrl + D --> brakes right
+* LAlt +  S --> apply both brakes
 
 Press F to deploy full flaps
 
@@ -47,7 +47,7 @@ Rotate about 100 mph
 
 Press F to retract flaps, press G to retract gears (3 greens lights, gears down, 3 red lights gears retracting / extending, no lights gears retracted)
 
-Weapons controls
+## Weapons controls
 
 Switch Master weapons ON
 Select Bombs or Rockets on B/R switch
