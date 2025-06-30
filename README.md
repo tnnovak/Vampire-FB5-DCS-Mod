@@ -21,6 +21,8 @@ This is a rather still experimental version. Error reporting, feedbacks and impr
 
 ## Cold startup Sequence
 
+Check right panel switches below:
+
 <img src="https://github.com/tnnovak/Vampire-FB5-DCS-Mod/blob/main/images/cockpit.png"></img>
 
 1. Click Battery ON switch
