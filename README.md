@@ -5,7 +5,7 @@ Vampire FB5 DCS World MOD
 
 This is a rather still experimental version. Error reporting, feedbacks and improvement sugestions are wellcome.
 
-## Features not aviable, WIP:
+## Features NOT avaiable, WIP:
 
 * External fuel tanks
 * Complete damage model
