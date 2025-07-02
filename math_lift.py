@@ -1,6 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# *************************************************
+# Back to back calculations to compare lift, drag 
+# curves and top performance
+# *************************************************
+
 M = 4000 * 9.81  # Mass in kgf (4000 kg * 9.81 m/s^2)
 
 # Constants
