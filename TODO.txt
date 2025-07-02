@@ -1,0 +1,108 @@
+Item                                                                                                                    STATUS    Time Spent
+Check start timer behaviour when moving throttle early and throttle speed                                               BKL                 
+Damage model                                                                                                            BKL
+When engine have a fameout in the air, keep the state of the gear (dont retract if is extended)                         BKL                 
+Gear emergence pneumatic deploy                                                                                         BKL                 
+Create speed brakes                                                                                                     BKL                 
+Activate the G meter instrument                                                                                         BKL                 
+attached G meter                                                                                                        BKL                 
+attach OX indicator and OX system                                                                                       BKL                 
+battery light? (nao utilizada)                                                                                          BKL                 
+Create external tanks EDM, create loadout for external tank, create EFM logic for external tanks                        BKL                 
+Create / plugin more realistic Gun Sight algorithm and functions for guns, rockets or bombs                             BKL                 
+Create arrestor hook (RN version)                                                                                       BKL                 
+Fix malfunction turn and bank                                                                                           WIP                 
+Fix engine restart logic (Whyen fameout occur only restart if all switches are in correct position for restart)         WIP                 
+Check brakes turning moment                                                                                             WIP                 
+Create canopy open / close animations (plane and cockpit)                                                               DONE      1         
+Create engine EGT better temperature behaviour                                                                          DONE      1         
+Create engine throttle speed limitation and surge                                                                       DONE      2         
+Add Aircraft Port navigation light and Starboard navigation light (and circuits and switches)                           DONE      2         
+Modify lower doors textures with new shaders amd UV map (Blender)                                                       DONE      1         
+Recreate gunsight texture                                                                                               DONE      0.5       
+Fix non-working AH                                                                                                      DONE      0.5       
+Fix engine thrust at altitude                                                                                           DONE      2         
+Rebuild the Collision Blender Model and EDM                                                                             DONE      4         
+better wheels textures                                                                                                  DONE      0.5       
+fix weird circles in the canopy glass (NORMAL MAP issue? check in other machines or redo the glass)                     DONE      1         
+Add more "planks" inside body to hide surface normal errors                                                             DONE      1         
+Fix EFM compressibility effects range                                                                                   DONE      0.2       
+Put cockpit canopy lateral glasses                                                                                      DONE      0.5       
+fix disapearing front glass                                                                                             DONE      1         
+connect pressures gauges (2 gauges are dificult to see, 1 for pneum. or hyd pressure, 1 for oil pressure)               DONE      1         
+fix Gyro start animation                                                                                                DONE      3         
+adjust differential brakes keys                                                                                         DONE      2         
+Add more switches to the cockpit model                                                                                  DONE      4         
+Add switch for gun sight ON/OFF                                                                                         DONE      2         
+create moving average for instruments                                                                                   DONE      0.5       
+put bombs loadout (Issue is correct CLSID)                                                                              DONE      4         
+Gunsight visible only when main electric bus is ON                                                                      DONE      2         
+adjust correct gun positons in the airframe                                                                             DONE      0.5       
+move booster pump warning light                                                                                         DONE      0.2       
+fix RPM "jumping" bug                                                                                                   DONE      1         
+-- emergencia: Fire warning light                                                                                       BLK                 
+-- emergencia: engine fire warning light                                                                                BLK                 
+-- emergencia: generator failure warning light                                                                          BLK                 
+-- principais: Generator warning light 01 - 3000                                                                        DONE      1         
+-- principais: Fuel pressure warning light 05 - 3040                                                                    DONE      1         
+-- principais: cockpit pressure warning light 06 - 3050                                                                 BLK                 
+wheels not locked warning light 04 - 3030                                                                               DONE      2         
+Wheels between UP and DOWN Three red lights                                                                             DONE      2         
+Wheels locked DOWN Three green lights                                                                                   DONE      1         
+Wheels locked up - NO lights                                                                                            DONE      1         
+Corrigir logica das teclas de freio (usar up and down)                                                                  DONE      3         
+fix RPM, Speed, EGT, clock and ALT instruments working                                                                  DONE      1         
+figure out and make lights work in the cockpit (and maybe external lights?)                                             DONE      1         
+fix fuel gauges and fuel system                                                                                         DONE      3         
+attach Flap indicator                                                                                                   DONE      0.5       
+create show/hide animation for stick (to be able to see warning lights)                                                 DONE      0.5       
+create internal engine sounds?                                                                                          DONE      1         
+fix cold start gear up bug                                                                                              DONE      2         
+criar animacoes p switches (starter)                                                                                    DONE      4         
+create Flow system instruments and weapons logic part 50%                                                               DONE      10        
+create all switches connectors and logic                                                                                DONE      5         
+fix missing Stick pitch                                                                                                 DONE      0.1       
+add logic to stick movement                                                                                             DONE      2         
+add logic to trim indicator                                                                                             DONE      3         
+add flap and gear lever logic                                                                                           DONE      3         
+fix plane model cockpit hide bug                                                                                        DONE      1         
+criar object 3d suporte base stick p/ roll axis                                                                         DONE      2         
+Artifitial horizon                                                                                                      DONE      1         
+HSI                                                                                                                     DONE      1         
+Trim Throttle                                                                                                           DONE      1         
+Gears:                                                                                                                  DONE      2         
+flpas, aileron, rudder: Gabriel                                                                                         DONE      1         
+Put EFM Collision lines                                                                                                 DONE      3         
+Change external model cockpit hide --> lateral cockpit walls                                                            DONE      3         
+Plug gear                                                                                                               DONE      2         
+Plug flaps                                                                                                              DONE      1         
+Create Weapons (rockest shapes, bombs?)                                                                                 DONE      5         
+GUN is Working                                                                                                          DONE      0.5       
+ROCKET is working                                                                                                       DONE      0.5       
+Code weapons LUA                                                                                                        DONE      2         
+defintions (DONE for Cannon)                                                                                            DONE      0.5       
+Pylons creation at position                                                                                             DONE      2         
+Sight texture and logic (DONE partially GUN SIGHT)                                                                      DONE      3         
+Rewrite Vampire LUA (remove not Vampire related stuff)                                                                  DONE      1         
+Fix skin metals and bump                                                                                                DONE      5         
+Make liveries                                                                                                           DONE      4         
+Engine Sounds                                                                                                           DONE      1         
+ADDED EXTERNAL default sounds                                                                                           DONE      1         
+Resolver questão escala bones e modelo (TONI)                                                                           DONE      2         
+concertar animação do manche (TONI)                                                                                     DONE      1         
+Gabriel: Fazer animações:                                                                                               DONE      2         
+Horizonte artificial (aguardar Toni enviar modelo 3D do ponteiro)                                                       DONE      2         
+HSI (aguardar Toni enviar modelo 3D do ponteiro)                                                                        DONE      2         
+Indicador do TRIM (esquerda em cima)                                                                                    DONE      2         
+2 Manipulos do quadrante do Throttle                                                                                    DONE      2         
+Trem de pouso (nariz e 2 principais, esquerdo e direito). Primeiramente sem portas apenas rotação do trem, depois com poDONE      2         
+Ailerons (esquerdo e direito, 20 graus p cima, 20 graus p baixo)                                                        DONE      2         
+Flaps (esquerdo e direito, flap apenas rotaciona para baixo até ~80 graus)                                              DONE      2         
+Profundor (20 graus p cima, 20 graus p baixo)                                                                           DONE      2         
+Lemes (esquerdo e direito, 20 graus p cada lado)                                                                        DONE      2         
+E no futuro sliding do canopy (nao necessario agora)                                                                    DONE      2         
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+Total Time Spent                                                                                                                  154       

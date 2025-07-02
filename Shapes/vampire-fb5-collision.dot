@@ -1,0 +1,15 @@
+graph modelgraph {
+	node [shape=plaintext fontname="Consolas" fontsize="8"];
+	"{b98fe1bb-cc84-47ea-aaca-5937e2d50dd8}" [label=<<table border="1" cellborder="0" cellspacing="1"><tr><td align="left"><b>ROOT_TRANSFORM_NODE</b></td></tr><tr><td align="left">NODE</td></tr><tr><td align="left">nDependentObjects: 0</td></tr></table>>];
+	"Bonetransform" [label=<<table border="1" cellborder="0" cellspacing="1"><tr><td align="left"><b>Bonetransform</b></td></tr><tr><td align="left">TRANSFORM_NODE</td></tr><tr><td align="left">nDependentObjects: 0</td></tr></table>>];
+	"Bonetransform" [label=<<table border="1" cellborder="0" cellspacing="1"><tr><td align="left"><b>Bonetransform</b></td></tr><tr><td align="left">TRANSFORM_NODE</td></tr><tr><td align="left">nDependentObjects: 0</td></tr></table>>];
+	"WHEEL_Ftransform" [label=<<table border="1" cellborder="0" cellspacing="1"><tr><td align="left"><b>WHEEL_Ftransform</b></td></tr><tr><td align="left">TRANSFORM_NODE</td></tr><tr><td align="left">nDependentObjects: 1</td></tr></table>>];
+	"WHEEL_Ltransform" [label=<<table border="1" cellborder="0" cellspacing="1"><tr><td align="left"><b>WHEEL_Ltransform</b></td></tr><tr><td align="left">TRANSFORM_NODE</td></tr><tr><td align="left">nDependentObjects: 1</td></tr></table>>];
+	"WHEEL_Rtransform" [label=<<table border="1" cellborder="0" cellspacing="1"><tr><td align="left"><b>WHEEL_Rtransform</b></td></tr><tr><td align="left">TRANSFORM_NODE</td></tr><tr><td align="left">nDependentObjects: 1</td></tr></table>>];
+	"null" -- "{b98fe1bb-cc84-47ea-aaca-5937e2d50dd8}";
+	"" -- "Bonetransform";
+	"Bonetransform" -- "Bonetransform";
+	"Bonetransform" -- "WHEEL_Ftransform";
+	"Bonetransform" -- "WHEEL_Ltransform";
+	"Bonetransform" -- "WHEEL_Rtransform";
+}

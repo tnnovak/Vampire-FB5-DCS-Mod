@@ -1,0 +1,6 @@
+model={
+	lods={
+		{"Vampire-FB5.edm",50000.0};
+	};		
+	collision_shell = "Vampire-FB5-collision.edm";
+}

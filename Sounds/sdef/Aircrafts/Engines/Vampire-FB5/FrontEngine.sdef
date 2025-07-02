@@ -1,0 +1,4 @@
+wave = "Effects/Aircrafts/Engines/Vampire-FB5/FrontEngine"
+inner_radius = 100
+outer_radius = 1000
+gain = 1.0

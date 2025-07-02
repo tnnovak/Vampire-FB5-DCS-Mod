@@ -1,0 +1,4 @@
+wave = "Effects/Aircrafts/Vampire-FB5/ExplosiveCharge2.wav"
+inner_radius = 10
+outer_radius = 100
+gain = 2
