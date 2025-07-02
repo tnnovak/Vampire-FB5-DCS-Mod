@@ -1,6 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# *************************************************
+# Back to back calculations to compare lift, drag 
+# curves and top performance
+# *************************************************
 
 LD = 11    # Example lift-to-drag ratio
 AR = 8     # Aspect ratio
