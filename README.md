@@ -22,11 +22,14 @@ Part of the logic inside the EFM on this MOD made use of my custom Graph to C lo
 * Air brakes
 * Oxygen system
 * Many other small bugs
+* 3d model needs much attention (better liveries, fix normals and others)
 
 ## Works:
+
 * basic EFM with flight envelope more or less close to Vampire curves
 * Weapons: bombs and rockets
-* Basic aircraft systems: pneumatic, hydraulic, electric and engine
+* Basic aircraft systems: pneumatic, hydraulic, electric and engine, gears
+* Basic cockpit instruments
 
 ## Cold startup Sequence
 
