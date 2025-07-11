@@ -187,7 +187,7 @@ function post_initialize()
 
         InitializeSoundSystem("Avionics")     
         
-        print_message_to_user("LockOn_Options.script_path: "..LockOn_Options.script_path)
+        -- print_messa_to_user("LockOn_Options.script_path: "..LockOn_Options.script_path)
 
         local birth = LockOn_Options.init_conditions.birth_place
 
@@ -198,19 +198,19 @@ function post_initialize()
 
         if birth=="GROUND_HOT" then
 
-                print_message_to_user("GROUND_HOT")
+                -- print_messa_to_user("GROUND_HOT")
                 canopy_arg_value = -1
                 canopy_state = 0 
 
         elseif birth=="AIR_HOT" then
 
-                print_message_to_user("AIR HOT START")
+                -- print_messa_to_user("AIR HOT START")
                 canopy_arg_value = -1
                 canopy_state = 0 
 
         elseif birth=="GROUND_COLD" then
 
-                print_message_to_user("GROUND_COLD")
+                -- print_messa_to_user("GROUND_COLD")
                 canopy_arg_value = -1
                 canopy_state = 0 
                         
@@ -232,68 +232,68 @@ function SetCommand(command,value)
 
     if command==5300 then
 
-        print_message_to_user("Master Ground / Flight Switch")
+        -- print_messa_to_user("Master Ground / Flight Switch")
 
         playSoundOnce(plane_sounds.sound_SwitchPush)
 	
     elseif command==5380 then
 		
-		print_message_to_user("Low Pressure Fuel cock")
+		-- print_messa_to_user("Low Pressure Fuel cock")
 
         playSoundOnce(plane_sounds.sound_SwitchPush)
 
     elseif command==5390 then
 		
-		print_message_to_user("High Pressure Fuel cock")
+		-- print_messa_to_user("High Pressure Fuel cock")
 
         playSoundOnce(plane_sounds.sound_SwitchPush)
 
     elseif command==5400 then
 		
-		print_message_to_user("Engine Start Switch")       
+		-- print_messa_to_user("Engine Start Switch")       
 
         playSoundOnce(plane_sounds.sound_SwitchPush)
         
     elseif command==7430 then 
 
-        print_message_to_user("Left Gear Brake 7430 short")
+        -- print_messa_to_user("Left Gear Brake 7430 short")
 
       elseif command==7431 then 
 
-        print_message_to_user("Left Gear Brake 7431 long")
+        -- print_messa_to_user("Left Gear Brake 7431 long")
         
     elseif command==7445 then   
 
-        print_message_to_user("Right Gear Brake 7445 short") 
+        -- print_messa_to_user("Right Gear Brake 7445 short") 
         
     elseif command==7446 then   
 
-        print_message_to_user("Right Gear Brake 7446 long")         
+        -- print_messa_to_user("Right Gear Brake 7446 long")         
 
     elseif command==8000 then   
 
-        print_message_to_user("Brakes 8000")         
+        -- print_messa_to_user("Brakes 8000")         
 
     elseif command==5410 then
 
-        print_message_to_user("Flaps ON 5410")
+        -- print_messa_to_user("Flaps ON 5410")
 
     elseif command==72 then
 
-        print_message_to_user("Flaps ON 72")
+        -- print_messa_to_user("Flaps ON 72")
 
 
     elseif command==5420 then 
 
-        print_message_to_user("Flaps OFF 5420")        
+        -- print_messa_to_user("Flaps OFF 5420")        
 
     elseif command==84 then 
 
-        print_message_to_user("Guns 84")        
+        -- print_messa_to_user("Guns 84")        
 
     elseif command==iCommandStickHide then
 
-        print_message_to_user("Stick Hide/Show")
+        -- print_messa_to_user("Stick Hide/Show")
 
         if (StickHide:get() == -1) then
              StickHide:set(1)
@@ -306,33 +306,33 @@ function SetCommand(command,value)
         GS_VPOS = GS_VPOS + GS_POS_INC
         GunSightVPOS:set(GS_VPOS)
 
-        print_message_to_user("Gun Sight Move Up: "..GS_VPOS)
+        -- print_messa_to_user("Gun Sight Move Up: "..GS_VPOS)
 
     elseif command==Keys.GunSightMoveDown then          
         
         GS_VPOS = GS_VPOS - GS_POS_INC
         GunSightVPOS:set(GS_VPOS)
 
-        print_message_to_user("Gun Sight Move Down: "..GS_VPOS)
+        -- print_messa_to_user("Gun Sight Move Down: "..GS_VPOS)
 
     elseif command==Keys.GunSightMoveLeft then
         GS_HPOS = GS_HPOS - GS_POS_INC
         GunSightHPOS:set(GS_HPOS)
 
-        print_message_to_user("Gun Sight Move Left: "..GS_HPOS)
+        -- print_messa_to_user("Gun Sight Move Left: "..GS_HPOS)
 
     elseif command==Keys.GunSightMoveRight then
 
         GS_HPOS = GS_HPOS + GS_POS_INC
         GunSightHPOS:set(GS_HPOS)
 
-        print_message_to_user("Gun Sight Move Right: "..GS_HPOS)
+        -- print_messa_to_user("Gun Sight Move Right: "..GS_HPOS)
 
     elseif command==Keys.BatterySwitch then
 
         playSoundOnce(plane_sounds.sound_SwitchPush)
 
-        print_message_to_user("Battery Switch ON/OFF")
+        -- print_messa_to_user("Battery Switch ON/OFF")
 
     elseif command==Keys.CockpitLightsOnOff then
 
@@ -350,7 +350,7 @@ function SetCommand(command,value)
             CockpitLightSwitch:set(0)
         end
 
-        print_message_to_user("Cockpit Lights ON/OFF")
+        -- print_messa_to_user("Cockpit Lights ON/OFF")
 
     elseif command==Keys.LandingLightsOnOff then
 
@@ -370,12 +370,12 @@ function SetCommand(command,value)
             set_aircraft_draw_argument_value(2150, 0) -- Show Landing Lights
         end
 
-        print_message_to_user("Landing Lights ON/OFF")
+        -- print_messa_to_user("Landing Lights ON/OFF")
 
 
     elseif command==Keys.CanopyOpenClose then
 
-        print_message_to_user("Canopy Open/Close")        
+        -- print_messa_to_user("Canopy Open/Close")        
 
         if canopy_state == 0 then             
             canopy_state = 1
@@ -391,15 +391,15 @@ function SetCommand(command,value)
 
         if (PARAM_ShowDebugScreen:get() == 1) then
             PARAM_ShowDebugScreen:set(0)
-            print_message_to_user("Hiding Debug Screen")
+            -- print_messa_to_user("Hiding Debug Screen")
         else
             PARAM_ShowDebugScreen:set(1)
-            print_message_to_user("Showing Debug Screen")
+            -- print_messa_to_user("Showing Debug Screen")
         end        
 
 
     else
-        -- print_message_to_user("Command not handled: "..command)
+        -- -- print_messa_to_user("Command not handled: "..command)
 
     end    
 

@@ -50,27 +50,27 @@ function SetCommand(command,value)
 
     if command == 68 then		
 					
-        print_message_to_user("Gear Command")    
+        -- print_messa_to_user("Gear Command")    
 
     elseif command == 74 then		
 					
-          print_message_to_user("74")          
+          -- print_messa_to_user("74")          
 
     elseif command == 73 then		
 					
-          print_message_to_user("73")          
+          -- print_messa_to_user("73")          
 
     elseif command == 3001 then		
           
-          print_message_to_user("3001")
+          -- print_messa_to_user("3001")
           
     elseif command == 3002 then		
           
-          print_message_to_user("3002")      
+          -- print_messa_to_user("3002")      
           
       elseif command == Keys.Brakes then
           
-          print_message_to_user("Brakes")
+          -- print_messa_to_user("Brakes")
         
 	end
 end
@@ -93,7 +93,7 @@ function post_initialize()
 
 end
 
-function update()
+function update()            
 
       GearRedLight1:set(PARAM_GearRedLight1:get())
       GearRedLight2:set(PARAM_GearRedLight2:get())
@@ -101,7 +101,7 @@ function update()
 
       GearGreenLight1:set(PARAM_GearGreenLight1:get())
       GearGreenLight2:set(PARAM_GearGreenLight2:get())
-      GearGreenLight3:set(PARAM_GearGreenLight3:get())
+      GearGreenLight3:set(PARAM_GearGreenLight3:get())  
 
 end
 

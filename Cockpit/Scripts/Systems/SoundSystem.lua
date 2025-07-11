@@ -227,7 +227,7 @@ function InitializeSoundSystem(module)
 
 	if create_sound_host ~= nil then 
 			
-		print_message_to_user("Creating sound_host for "..module)
+		-- print_messa_to_user("Creating sound_host for "..module)
 			
 		cpt_sh 							= create_sound_host("COCKPIT","HEADPHONES",0,0,0)
 

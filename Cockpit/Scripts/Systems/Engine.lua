@@ -79,19 +79,19 @@ function post_initialize()
 	
     if birth=="GROUND_HOT" then
 	
-        print_message_to_user("Ground HOT")
+        -- print_messa_to_user("Ground HOT")
 
         engine_state = 1
 
     elseif birth=="AIR_HOT" then
 	
-        print_message_to_user("Air HOT")
+        -- print_messa_to_user("Air HOT")
 
         engine_state = 1
 
     elseif birth=="GROUND_COLD" then
 	
-		print_message_to_user("Ground COLD")
+		-- print_messa_to_user("Ground COLD")
 
         engine_state = 0
 
@@ -104,7 +104,7 @@ function SetCommand(command,value)
 
     if command == Keys.BoosterPumpSwitch then
 
-        print_message_to_user("Booster Pump Switch")
+        -- print_messa_to_user("Booster Pump Switch")
 
         playSoundOnce(plane_sounds.sound_SwitchPush)
         playLoopingSound2(plane_sounds.sound_GyroLoop)
@@ -112,7 +112,7 @@ function SetCommand(command,value)
 
     elseif command == Keys.GyroSwitch then
 
-        print_message_to_user("Gyro Start Switch")
+        -- print_messa_to_user("Gyro Start Switch")
 
         playSoundOnce(plane_sounds.sound_SwitchPush)
 
@@ -131,13 +131,13 @@ function update()
     
     local rpm = PARAM_RPM_ARG:get()
 
-    -- print_message_to_user("rpm: " .. tostring(rpm) .. " engine_state: " .. tostring(engine_state))
+    -- -- print_messa_to_user("rpm: " .. tostring(rpm) .. " engine_state: " .. tostring(engine_state))
 
     -- jumped above 0, starting
     if tonumber(rpm) >= tonumber(-0.99) and engine_state==0 then        
         playSoundOnce(plane_sounds.engine_cabin_loop_start)
         engine_state = 1
-        print_message_to_user("Engine starting...")
+        -- print_messa_to_user("Engine starting...")
     end    
 
     -- crossed above or at idle 3000, started (running)
@@ -145,7 +145,7 @@ function update()
         engine_state = 2
         playLoopingSound2(plane_sounds.engine_cabin_loop)
         stopSound(plane_sounds.engine_cabin_loop_start)        
-        print_message_to_user("Engine started")
+        -- print_messa_to_user("Engine started")
     end    
 
     -- fell to 2500, shutting down
@@ -153,8 +153,8 @@ function update()
         playSoundOnce(plane_sounds.engine_cabin_loop_stop)
         stopSound(plane_sounds.engine_cabin_loop)
         engine_state = 3
-        print_message_to_user("Engine shutting down...")
-        print_message_to_user("rpm: " .. tostring(rpm))
+        -- print_messa_to_user("Engine shutting down...")
+        -- print_messa_to_user("rpm: " .. tostring(rpm))
     end    
     
     -- Engine

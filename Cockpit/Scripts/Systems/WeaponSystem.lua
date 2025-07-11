@@ -75,7 +75,7 @@ end
 
 function CheckLoad() 
 
-    print_message_to_user("CheckLoad()")
+    -- print_messa_to_user("CheckLoad()")
 
     -- Master ARM to OFF
     WeaponsSwitch:set(0.0)
@@ -88,13 +88,13 @@ function CheckLoad()
 
     local STCLSID = ST.CLSID              
 
-    print_message_to_user("Checking LOADOUT...")
+    -- print_messa_to_user("Checking LOADOUT...")
 
     for stn=0,3,1 do 
 
         local ST = WeaponSystem:get_station_info(stn)
 
-        -- print_message_to_user("Load="..ST.CLSID)
+        -- -- print_messa_to_user("Load="..ST.CLSID)
 
         if (ST~=nil) then       
 
@@ -113,30 +113,30 @@ function CheckLoad()
     end    
     
     if (numberOfRockets>0) then
-        print_message_to_user("RP-3 ROCKETS LOAD FOUND")
-        print_message_to_user("TOTAL ROCKETS="..tostring(numberOfRockets))    
+        -- print_messa_to_user("RP-3 ROCKETS LOAD FOUND")
+        -- print_messa_to_user("TOTAL ROCKETS="..tostring(numberOfRockets))    
     end    
 
     if (numberOfBombs>0) then
-        print_message_to_user("500LB BOMBS LOAD FOUND")
-        print_message_to_user("TOTAL BOMBS="..tostring(numberOfBombs))    
+        -- print_messa_to_user("500LB BOMBS LOAD FOUND")
+        -- print_messa_to_user("TOTAL BOMBS="..tostring(numberOfBombs))    
     end
 
     numberOfRocketsRemaining = numberOfRockets
     numberOfBombsRemaining = numberOfBombs
 
     if (numberOfBombs == 4 and numberOfBombs==0) then
-        print_message_to_user("Rockets Only")
+        -- print_messa_to_user("Rockets Only")
         load_type = 0
     end    
 
     if (numberOfBombs > 0 and numberOfRockets > 0) then
-        print_message_to_user("Mixed Load")
+        -- print_messa_to_user("Mixed Load")
         load_type = 1
     end
 
     if (numberOfBombs > 0 and numberOfRockets==0) then
-        print_message_to_user("Bombs Only")
+        -- print_messa_to_user("Bombs Only")
         load_type = 2
     end
 
@@ -150,17 +150,17 @@ function post_initialize()
 
     if birth=="GROUND_HOT" or birth=="AIR_HOT" then 	
         
-        print_message_to_user("birth= GROUND_HOT or AIR_HOT")
+        -- print_messa_to_user("birth= GROUND_HOT or AIR_HOT")
 
         
     elseif birth=="GROUND_COLD" then
        
-        print_message_to_user("birth= GROUND_COLD")
+        -- print_messa_to_user("birth= GROUND_COLD")
 
     end    
 
     InitializeSoundSystem("Weapons")
-    print_message_to_user("WeaponSystem post_initialize COMPLETED")
+    -- print_messa_to_user("WeaponSystem post_initialize COMPLETED")
 
 end    
 
@@ -169,15 +169,15 @@ function SetCommand(command,value)
 
     if command == iCommandWeaponsMaterSwitch then
 
-        print_message_to_user("-- SWITCH MASTER ARM --")        
+        -- print_messa_to_user("-- SWITCH MASTER ARM --")        
             
         if MasterArm == 1 then            
-            print_message_to_user("MASTER ARM OFF")
+            -- print_messa_to_user("MASTER ARM OFF")
             WeaponsSwitch:set(0.0)
             MasterArm = 0
             MasterArm_S003:set(0.0)
         else            
-            print_message_to_user("MASTER ARM ON")
+            -- print_messa_to_user("MASTER ARM ON")
             WeaponsSwitch:set(0.5)
             MasterArm = 1    
             MasterArm_S003:set(1.0)        
@@ -188,11 +188,11 @@ function SetCommand(command,value)
     elseif command == iCommandRocketBombSelectorSwitch then        
 
         if (loadMode==0) then
-            print_message_to_user("ROCKETS SELECTED")
+            -- print_messa_to_user("ROCKETS SELECTED")
             loadMode = 1
             BombRockets_S004:set(1.0)            
         else
-            print_message_to_user("BOMBS SELECTED")
+            -- print_messa_to_user("BOMBS SELECTED")
             loadMode = 0            
             BombRockets_S004:set(0.0)            
         end
@@ -201,13 +201,13 @@ function SetCommand(command,value)
         
     elseif command == iCommandRocketModeSwitch then
 
-        print_message_to_user("rocketsSalvoMode="..rocketsSalvoMode)                
+        -- print_messa_to_user("rocketsSalvoMode="..rocketsSalvoMode)                
 
         if rocketsSalvoMode == 1  then
                     
             rocketsSalvoMode = 0
 
-            print_message_to_user("SALVO MODE 0 (ALL)")
+            -- print_messa_to_user("SALVO MODE 0 (ALL)")
 
             WeaponsSwitch:set(1.0)       
             SalvoMode_S005:set(0.0)     
@@ -216,10 +216,10 @@ function SetCommand(command,value)
 
             rocketsSalvoMode = 1
 
-            print_message_to_user("SALVO MODE 1 (SINGLE)")
+            -- print_messa_to_user("SALVO MODE 1 (SINGLE)")
 
-            print_message_to_user("numberOfRocketsRemaining="..numberOfRocketsRemaining)
-            print_message_to_user("rocketsSalvoCount="..rocketsSalvoCount)            
+            -- print_messa_to_user("numberOfRocketsRemaining="..numberOfRocketsRemaining)
+            -- print_messa_to_user("rocketsSalvoCount="..rocketsSalvoCount)            
 
             WeaponsSwitch:set(0.5)
             SalvoMode_S005:set(1.0)     
@@ -234,26 +234,26 @@ function SetCommand(command,value)
 
             if MasterArm==1 then
 
-                print_message_to_user("-- DROP BOMBS --")
+                -- print_messa_to_user("-- DROP BOMBS --")
 
                 if (numberOfBombsRemaining>0) then
 
                     numberOfBombsRemaining = numberOfBombsRemaining - 2
 
-                    print_message_to_user("First Batch")
+                    -- print_messa_to_user("First Batch")
                                     
                     WeaponSystem:launch_station(1)                                                
                     WeaponSystem:launch_station(2)                                                
                                 
                 else
                     
-                    print_message_to_user("NO BOMBS IN THE RACKS")
+                    -- print_messa_to_user("NO BOMBS IN THE RACKS")
 
                 end
             
             else
                 
-                print_message_to_user("WARN: WEAPONS MASTER ARM OFF")
+                -- print_messa_to_user("WARN: WEAPONS MASTER ARM OFF")
                 
             end
 
@@ -262,20 +262,20 @@ function SetCommand(command,value)
         
         if (loadMode==1) then
 
-            print_message_to_user("-- FIRE ROCKETS --")
+            -- print_messa_to_user("-- FIRE ROCKETS --")
 
             if (MasterArm==1) then
 
                 -- Shoot everything 
                 if (rocketsSalvoMode==0) then
 
-                    print_message_to_user("SM0 --> ALL")
+                    -- print_messa_to_user("SM0 --> ALL")
 
                     if (numberOfRocketsRemaining>0) then
 
                         numberOfRocketsRemaining = 0
             
-                        print_message_to_user("First Batch")
+                        -- print_messa_to_user("First Batch")
                         
                         -- only rockets load
                         if (load_type==0) then
@@ -293,7 +293,7 @@ function SetCommand(command,value)
                         
                     else
                         
-                        print_message_to_user("NO ROCKETS IN THE RACKS")
+                        -- print_messa_to_user("NO ROCKETS IN THE RACKS")
 
                     end    
 
@@ -302,7 +302,7 @@ function SetCommand(command,value)
                 -- Shoot single
                 if (rocketsSalvoMode==1) then
 
-                    print_message_to_user("SM1 --> SINGLE")
+                    -- print_messa_to_user("SM1 --> SINGLE")
 
                     if (numberOfRocketsRemaining>=0) then
             
@@ -321,8 +321,8 @@ function SetCommand(command,value)
 
                         numberOfRocketsRemaining = numberOfRocketsRemaining - 1
 
-                        print_message_to_user("numberOfRocketsRemaining="..numberOfRocketsRemaining)
-                        print_message_to_user("rocketsSalvoCount="..rocketsSalvoCount)
+                        -- print_messa_to_user("numberOfRocketsRemaining="..numberOfRocketsRemaining)
+                        -- print_messa_to_user("rocketsSalvoCount="..rocketsSalvoCount)
 
                         rocketsSalvoCount = rocketsSalvoCount + 1;                
 
@@ -332,7 +332,7 @@ function SetCommand(command,value)
 
                     else
                         
-                        print_message_to_user("NO ROCKETS IN THE RACKS")
+                        -- print_messa_to_user("NO ROCKETS IN THE RACKS")
 
                     end
 
@@ -341,7 +341,7 @@ function SetCommand(command,value)
             
             else
 
-                print_message_to_user("WARN: WEAPONS MASTER ARM OFF")
+                -- print_messa_to_user("WARN: WEAPONS MASTER ARM OFF")
 
             end        
 
@@ -355,7 +355,7 @@ function SetCommand(command,value)
             current_gs_size_index = 1
         end
 
-        print_message_to_user("Gun Sight Size Mode: "..current_gs_size_index)
+        -- print_messa_to_user("Gun Sight Size Mode: "..current_gs_size_index)
 
         gs_arg_value = GunSightSizeKnobArgValue[current_gs_size_index]
         -- gs_arg_value = map_range(current_gs_size_index, 1, 9, -1.0, 1.0)
@@ -363,14 +363,14 @@ function SetCommand(command,value)
         gvis = current_gs_size_index + 0.5
         gunsight_set = 1
 
-        print_message_to_user("GunSightSizeKnobArgValue: "..gs_arg_value)                    
-        print_message_to_user("GS VIS Arg: "..gvis)
+        -- print_messa_to_user("GunSightSizeKnobArgValue: "..gs_arg_value)                    
+        -- print_messa_to_user("GS VIS Arg: "..gvis)
 
     elseif command == Keys.GunSightSwitch then
 
         playSoundOnce(plane_sounds.sound_SwitchPush)
         
-        print_message_to_user("Gun Sight Switch ON/OFF")
+        -- print_messa_to_user("Gun Sight Switch ON/OFF")
 
     end       
    
