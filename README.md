@@ -10,7 +10,7 @@ MOD zip file:
 
 Part of the logic inside the EFM on this MOD made use of my custom Graph to C logic generator, you can check here:
 
-<a href="https://github.com/tnnovak/FlowSystem">Flow System on Github</a>
+<a href="https://github.com/tnnovak/Flow-System">Flow System on Github</a>
 
 ## Features NOT avaiable, WIP:
 
