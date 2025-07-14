@@ -5,6 +5,13 @@ Vampire FB5 DCS World MOD
 
 This is a rather still experimental version. Error reporting, feedbacks and improvement sugestions are wellcome.
 
+MOD zip file:
+<a href="https://github.com/tnnovak/Vampire-FB5-DCS-Mod/releases/tag/v1.0.0.-alpha">here</a>
+
+Part of the logic inside the EFM on this MOD made use of my custom Graph to C logic generator, you can check here:
+
+<a href="https://github.com/tnnovak/FlowSystem">Flow System on Github</a>
+
 ## Features NOT avaiable, WIP:
 
 * External fuel tanks
@@ -15,11 +22,14 @@ This is a rather still experimental version. Error reporting, feedbacks and impr
 * Air brakes
 * Oxygen system
 * Many other small bugs
+* 3d model needs much attention (better liveries, fix normals and others)
 
 ## Works:
+
 * basic EFM with flight envelope more or less close to Vampire curves
 * Weapons: bombs and rockets
-* Basic aircraft systems: pneumatic, hydraulic, electric and engine
+* Basic aircraft systems: pneumatic, hydraulic, electric and engine, gears
+* Basic cockpit instruments
 
 ## Cold startup Sequence
 
