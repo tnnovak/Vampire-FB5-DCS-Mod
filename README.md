@@ -8,6 +8,8 @@ This is a rather still experimental version. Error reporting, feedbacks and impr
 MOD zip file:
 <a href="https://github.com/tnnovak/Vampire-FB5-DCS-Mod/releases/tag/v1.0.0.-alpha">here</a>
 
+(should go to "[user]\Saved Games\DCS\Mods\Aircraft\Vampire-FB5\" with all subfolders inside, as usual)
+
 Part of the logic inside the EFM on this MOD made use of my custom Graph to C logic generator, you can check here:
 
 <a href="https://github.com/tnnovak/Flow-System">Flow System on Github</a>
