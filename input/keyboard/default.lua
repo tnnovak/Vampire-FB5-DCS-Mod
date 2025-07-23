@@ -1,8 +1,13 @@
 
+local cscripts = folder.."../../Cockpit/Scripts/"
+dofile(cscripts.."devices.lua")
+dofile(cscripts.."command_defs.lua")
+
 local res = external_profile("Config/Input/Aircrafts/base_keyboard_binding.lua")
 -- dofile(LockOn_Options.script_path.."command_defs.lua")
 
-dofile("C:/Users/tonin/Saved Games/DCS.openbeta/Mods/Aircraft/Vampire-FB5/Cockpit/Scripts/command_defs.lua")
+-- dofile("C:/Users/tonin/Saved Games/DCS.openbeta/Mods/Aircraft/Vampire-FB5/Cockpit/Scripts/command_defs.lua")
+
 
 join(res.keyCommands,{
 

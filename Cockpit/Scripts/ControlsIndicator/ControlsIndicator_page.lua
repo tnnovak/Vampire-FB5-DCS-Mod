@@ -122,8 +122,11 @@ AddText("L/W", FONT, "PARAM_LW", base.name, text_x_align , text_y_align - (5 * d
 --AddText("ALT", FONT, "PARAM_ALT", base.name, text_x_align , text_y_align - (6 * delta_y),1,"feet")
 --AddText("Climb", FONT, "PARAM_EngineStartTimerState", base.name, text_x_align , text_y_align - (7 * delta_y),1,"feet/min")
 
-AddText("ETCount", FONT, "PARAM_EngineStartTimerCount", base.name, text_x_align , text_y_align - (6 * delta_y),1,"")
-AddText("ETState", FONT, "PARAM_EngineStartTimerState", base.name, text_x_align , text_y_align - (7 * delta_y),1,"")
+-- AddText("ETCount", FONT, "PARAM_EngineStartTimerCount", base.name, text_x_align , text_y_align - (6 * delta_y),1,"")
+-- AddText("ETState", FONT, "PARAM_EngineStartTimerState", base.name, text_x_align , text_y_align - (7 * delta_y),1,"")
+
+AddText("Pitch", FONT, "PARAM_Pitch", base.name, text_x_align , text_y_align - (6 * delta_y),1,"deg")
+AddText("Stall Mode", FONT, "PARAM_StallRegion", base.name, text_x_align , text_y_align - (7 * delta_y),1,"")
 
 AddText("Fuel Flow", FONT, "PARAM_FuelFlow", base.name, text_x_align , text_y_align - (9 * delta_y),5,"GL/sec")
 AddText("Fus tank", FONT, "PARAM_FFFus", base.name, text_x_align , text_y_align - (10 * delta_y),5,"GL")
@@ -139,8 +142,9 @@ AddText("Right tank", FONT, "PARAM_FFRight", base.name, text_x_align , text_y_al
 
 AddText("Trim", FONT, "PARAM_Trim", base.name, text_x_align , text_y_align - (14 * delta_y),1,"N.m")
 AddText("S.M.", FONT, "PARAM_SM", base.name, text_x_align , text_y_align - (15 * delta_y),5,"m")
-AddText("KCMRest", FONT, "PARAM_RM", base.name, text_x_align , text_y_align - (16 * delta_y),5,"")
-AddText("Cmq", FONT, "PARAM_DM", base.name, text_x_align , text_y_align - (17 * delta_y),5,"")
+AddText("CL", FONT, "PARAM_CLT", base.name, text_x_align , text_y_align - (16 * delta_y),5,"")
+
+AddText("ALT", FONT, "PARAM_ALT", base.name, text_x_align , text_y_align - (17 * delta_y),1,"feet")
 
 AddText("Yaw", FONT, "PARAM_Yaw", base.name, text_x_align , text_y_align - (19 * delta_y),1,"Deg")
 AddText("Roll", FONT, "PARAM_Roll", base.name, text_x_align , text_y_align - (20 * delta_y),1,"Deg")

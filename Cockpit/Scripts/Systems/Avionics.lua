@@ -453,7 +453,7 @@ function update()
     PedalYaw:set(PARAM_PedalYawState:get())
     --PitchTrim:set(PARAM_PitchTrimState:get())    
     PitchTrimWheel:set(PARAM_TrimIndicatorState:get())    
-    StickPitch:set(PARAM_StickPitchState:get())
+    StickPitch:set(-PARAM_StickPitchState:get())
     StickRoll:set(PARAM_StickRollState:get())
 
     -- Flaps and Gear

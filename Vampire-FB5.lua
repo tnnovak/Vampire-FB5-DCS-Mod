@@ -185,7 +185,7 @@ declare_loadout(
 VampireFB5 =  {
       
 		Name 			= 'Vampire-FB5',
-		DisplayName		= _('De Havilland Vampire FB5'),
+		DisplayName		= _('de Havilland Vampire FB5'),
         Picture 		= "Vampire-FB5.png",
         Rate 			= "50",
         Shape			= "Vampire-FB5",
