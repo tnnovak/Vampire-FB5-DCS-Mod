@@ -2,7 +2,7 @@
 Vampire FB5 DCS World MOD
 Vampire-FB5 Mod
 
-<img src="https://github.com/tnnovak/Vampire-FB5-DCS-Mod/images/montagem.png">
+<img src="https://github.com/tnnovak/Vampire-FB5-DCS-Mod/blob/main/images/cockpit.png">
 
 This is a rather still experimental version. Error reporting, feedbacks and improvement sugestions are wellcome.
 
