@@ -88,6 +88,8 @@ Pitch TRIM (check trim indicator, left side of the Gunsight):
 * , Trim UP
 * . Trim Down
 
+Airbrakes: LAlt + A (external animation not working yet)
+
 ## Fuel System
 
 Comsumption: Tip tanks first, wing tanks second, fuselage tank last
