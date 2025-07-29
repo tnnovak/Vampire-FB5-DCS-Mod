@@ -55,11 +55,14 @@ join(res.keyCommands,{
     {combos = {{key = '0', reformers={'LAlt'}}},           down = Keys.BombsRearFusingSwitch, name = _('Bombs rear fusing switch'), category = _('Weapons')},
 
 -- Flight Controls
+
     {combos = {{key = '.'}},                                down = Keys.PitchTrimDown, name = _('Pitch trim down'), category = _('Flight Controls')},
     {combos = {{key = ','}},                                down = Keys.PitchTrimUp, name = _('Pitch trim up'), category = _('Flight Controls')},
 
     {combos = {{key = "Z"}},								down = Keys.RudderLeft, up = Keys.RudderLeft, name=_('Flight Rudder Left'),category=_('Flight Controls')},
     {combos = {{key = "X"}},								down = Keys.RudderRight, up = Keys.RudderRight, name=_('Flight Rudder Right'),category=_('Flight Controls')},
+
+    {combos = {{key = "A", reformers={'LAlt'}}},			down = Keys.AirBrakes, name=_('Air Brakes'),category=_('Flight Controls')},
 
 -- Weapons
 

@@ -6,7 +6,7 @@ local res = external_profile("Config/Input/Aircrafts/common_joystick_binding.lua
 
 join(res.keyCommands,{
 
-	{down =Keys.PlaneAirbrake,	name = _('PlaneAirbrake'), 	category = {_('Flight Controls')}},
+	{down =Keys.AirBrakes,	name = _('PlaneAirbrake'), 	category = {_('Flight Controls')}},
 	{down =Keys.PlaneAirbrakeOn,	name = _('PlaneAirbrakeOn'), 	category = {_('Flight Controls')}},
 	{down =Keys.PlaneAirbrakeOff,	name = _('PlaneAirbrakeOff'), 	category = {_('Flight Controls')}},
 	{down =Keys.PlaneFireOn,	name = _('PlaneFireOn'), 	category = {_('Weapons')}},
