@@ -19,20 +19,20 @@ Part of the logic inside the EFM on this MOD made use of my custom Graph to C lo
 
 * External fuel tanks
 * Complete damage model
-* EFM: Non-linear and spin behaviour, better compressibility effects
+* EFM: Non-linear and better spin behaviour, better compressibility effects
 * Gunsight algorithm
 * Some instruments
-* Air brakes
 * Oxygen system
 * Many other small bugs
 * 3d model needs much attention (better liveries, fix normals and others)
 
 ## Works:
 
-* basic EFM with flight envelope more or less close to Vampire curves
+* Basic EFM with flight envelope more or less close to Vampire curves
 * Weapons: bombs and rockets
 * Basic aircraft systems: pneumatic, hydraulic, electric and engine, gears
 * Basic cockpit instruments
+* Airbrakes (lacks external animation)
 
 ## Cold startup Sequence
 
